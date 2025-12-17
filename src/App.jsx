@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import CatelogPage from './components/Catelog';
+
 import './App.css'
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   return (
    <>
-<CatelogPage/>
+   <ProductDetail/>
+
    </>
   )
 }
