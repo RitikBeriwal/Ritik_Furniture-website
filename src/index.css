@@ -20,7 +20,7 @@
 
 /* Background banner dots for Home Page */
 .hero-pattern{
-  background-image: radial-gradient(#E6D5C3 1px, transparent 1px);
+  background-image: radial-gradient(#E6D5C3 1.5px, transparent 1px);
   background-size: 24px 24px;
 }
 

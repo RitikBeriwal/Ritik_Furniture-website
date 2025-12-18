@@ -8,6 +8,7 @@ import { MdOutlineVerifiedUser } from "react-icons/md";
 import FeaturedCategories from "./FeaturedCategories";
 import {Link} from 'react-router-dom'
 import TrendingNow from "./TrendingNow";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -199,6 +200,11 @@ const Home = () => {
       {/* TRENDING NOW */}
       <div className="sm:px-10 py-15 px-2">
         <TrendingNow />
+      </div>
+
+      {/* TESTIMONIALS */}
+      <div className="sm:px-10 py-15 px-2 bg-[#E6D5C3]/20">
+        <Testimonial />
       </div>
     </>
   );
