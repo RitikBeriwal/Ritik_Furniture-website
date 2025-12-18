@@ -7,6 +7,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import FeaturedCategories from "./FeaturedCategories";
 import {Link} from 'react-router-dom'
+import TrendingNow from "./TrendingNow";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -197,7 +198,7 @@ const Home = () => {
       
       {/* TRENDING NOW */}
       <div className="sm:px-10 py-15 px-2">
-
+        <TrendingNow />
       </div>
     </>
   );

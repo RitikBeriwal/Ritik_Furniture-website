@@ -9,6 +9,14 @@
   --text: #2B2B2B; 
 } */
 
+/* hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 /* Background banner dots for Home Page */
 .hero-pattern{
