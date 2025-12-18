@@ -6,6 +6,7 @@ import ProductDetail from "./components/ProductDetail";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Home from "./components/home/Home";
+import Aboutus from "./components/about/AboutHero";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
 
         {/* Product detail page */}
         <Route path="/productdetails" element={<ProductDetail />} />
+
+        {/* About page */}
         <Route path="/aboutus" element={<Aboutus />} />
 
         {/* 404 fallback */}
