@@ -2,6 +2,70 @@
 import banner1 from "./images/banner(1).avif"
 import banner2 from "./images/banner(2).avif"
 import banner3 from "./images/banner(3).avif"
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { LuHeart } from "react-icons/lu";
+import { FiEye } from "react-icons/fi";
+
+export const productActions = [
+  { id: "cart", icon: MdOutlineShoppingBag },
+  { id: "wishlist", icon: LuHeart },
+  { id: "view", icon: FiEye },
+];
+
+export const products = [
+  {
+    id: 1,
+    category: "Chair",
+    title: "Luna Lounge Chair",
+    price: 399,
+    oldPrice: 499,
+    badge: "-20%",
+    badgeColor: "bg-[#D32F2F]",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCv3hB2LAYwZH8Psw0uMu0dMP9NksxaGqJzATPsIdKNxxjhmnLXAuNPKFwUvK5QLru1NrDMAhJy3YhkLaP3o7HMFAhlc5qfgR2YgsQPKProHzmbN6saReCe0FWcPRgoVMmyZ-9GONX97j6AFFf_B9zXXk5DKwKbr56xAhg5ebJbOrkIxrcD-RbbMgbN-_GXi0RYFzQGrDY5zCX_e5xA7ZNLlkJ40sOm-pJ1nhCSDtdRCUF1mRxAdC7jHFgTAfaFdhUHaKw4gJozkYT5",
+  },
+  {
+    id: 2,
+    category: "Table",
+    title: "Geo Coffee Table",
+    price: 349,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAeOiLKlkExZjfQrPWoTRWAYkVIlp85OQe_HSaAZRoZUg01xjNJO2VDaJJca87D2LS-wwJ2AnYE5ULQdkF6pvFjqMi4zSrmzzGbh_Iu0xcdBZwtl3Rur8cCjLgpWZeiDRBAPRe9UZBOF0UF66epWhnYP38eyG9Sxiz6Yl4tg7PXRpkmAw15PJiLnaWU0GLEjytNwsU5yHX_OMXskmlDXPZkJfpHUSp0XceOTLG8qyzGSfc9x06Yl4ihhxPybXicuyh4afsmckGTcKYm",
+  },
+  {
+    id: 3,
+    category: "Lighting",
+    title: "Arc Floor Lamp",
+    price: 199,
+    badge: "New",
+    badgeColor: "bg-[#C9A24D]",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7qPZY0XdwDNCv8JqGtZ8cxuZpJKsKTpKrsEvjmwOaEPne36_ghV6cILTNDSTi9W0D11vTmfdGSuE_oY4yQieYQBWa8uIDnUeGypjmxAT44tvwFuvFvCN3GNqsdEnvHVKQ8SzxaHQuD18ezWrW6onK5o0vKduYdFwlVsTiuCAnJDwcIKnAND-vgrF83--NIvJngpcM9d_NWj0Aty6ZmOU4HjdZZKrtwAWdpHZh-NmXRdPSvKClKOCbWWT_q5mNFbvB4M5J4a1Gn8c4",
+  },
+  {
+    id: 4,
+    category: "Chair",
+    title: "Vintage Armchair",
+    price: 650,
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCQeK87grqrAwS83KAO2qs2cW3b6Tgs7yhFJqh5sPTCn6ClMJATBamBSY9xKobzs1nzq9nGqPy_3-MfbwKl-pEOXURWxee0LKSkN2KdWjqUCyNrGBFmfBm4IggQsNQQH1YAg92BzkxBw-7YHTIdmsW8V7vuJcVCZAcZffisUKgdofoScwlxLvwTcVjdFeFWdW7zWn68Vl3bgiscp3Y8ZIgJPyTsDK3PXk6A7JS1kissxIFebtJL6vum-rRnptEpyipF66yG4nO-eIQF",
+  },
+  {
+    id: 5,
+    category: "Red Armchair",
+    title: "Crimson Lounge Chair",
+    price: 499,
+    image:"https://img.freepik.com/premium-photo/red-armchair-modern-setting-with-coffee-table_755913-9899.jpg",
+  },
+  {
+    id: 6,
+    category: "Yellow Armchair",
+    title: "Scandinavian Yellow Sofa",
+    price: 800,
+    image:"https://img.freepik.com/premium-photo/modern-interior-design-yellow-armchair-sofa-living-room-with-mock-up-poster-frame_143683-8405.jpg",
+  },
+];
+
 
 export const card = [
     {

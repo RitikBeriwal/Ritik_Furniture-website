@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Categories from "./components/Categories";
 import CategoryProducts from "./components/CategoryProducts";
-
+import CatelogPage from "./components/Catelog";
 import ProductDetail from "./components/ProductDetail";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";

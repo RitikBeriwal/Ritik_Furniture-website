@@ -7,27 +7,23 @@ import { FaRegHeart, FaRegUser, FaShoppingCart } from "react-icons/fa";
 import { HiOutlineX } from "react-icons/hi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink, Link } from "react-router-dom";
+import logo from '../assests/images/logo White.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
-    `block px-4 py-3 font-medium transition ${isActive ? "text-white" : "hover:text-(--accent)"
+    `block px-4 py-3 font-medium transition ${isActive ? "text-white" : "hover:text-[#C9A24D]"
     }`;
 
   return (
-    <div className="bg-(--primary) text-(--secondary)">
+    <div className="bg-[#3E2723] text-[#E6D5C3]">
       {/* NAVBAR */}
-      <nav className="px-2 sm:px-10 py-4 bg-(--primary) fixed top-0 left-0 w-full z-40">
+      <nav className="px-2 sm:px-10 py-4 bg-[#3E2723] fixed top-0 left-0 w-full z-40">
         <div className="flex justify-between items-center">
           {/* LOGO */}
           <div className="flex items-center gap-2">
-            <div className="bg-(--accent) p-2 rounded-full">
-              <RiSofaLine className="text-(--primary) text-[1.2rem]" />
-            </div>
-            <h2 className="text-xl font-serif font-bold text-white">
-              LuxFurniture
-            </h2>
+            <img src={logo} alt="" className="w-40" />
           </div>
 
           {/* DESKTOP LINKS */}
@@ -35,7 +31,7 @@ const Navbar = () => {
             <ul className="flex">
               <li><NavLink to="/" className={navLinkClass}>Home</NavLink></li>
               <li><NavLink to="/about" className={navLinkClass}>About Us</NavLink></li>
-              <li><NavLink to="/shop" className={navLinkClass}>Shop</NavLink></li>
+              <li><NavLink to="/catalog" className={navLinkClass}>Cataloge</NavLink></li>
               <li><NavLink to="/categories" className={navLinkClass}>Categories</NavLink></li>
               <li><NavLink to="/blog" className={navLinkClass}>Blog</NavLink></li>
               <li><NavLink to="/contact" className={navLinkClass}>Contact Us</NavLink></li>
@@ -44,9 +40,9 @@ const Navbar = () => {
 
           {/* ICONS */}
           <div className="flex items-center gap-4 ml-5 sm:ml-0">
-            <FaRegHeart className="text-[20px] cursor-pointer hover:text-(--accent) hidden sm:block" />
-            <FaRegUser className="text-[20px] cursor-pointer hover:text-(--accent) hidden sm:block" />
-            <FaShoppingCart className="text-[20px] cursor-pointer hover:text-(--accent)" />
+            <FaRegHeart className="text-[20px] cursor-pointer hover:text-[#C9A24D]  hidden sm:block" />
+            <FaRegUser className="text-[20px] cursor-pointer hover:text-[#C9A24D]  hidden sm:block" />
+            <FaShoppingCart className="text-[20px] cursor-pointer hover:text-[#C9A24D] " />
 
             {/* MENU BUTTON */}
             <button
@@ -70,7 +66,7 @@ const Navbar = () => {
 
       {/* RIGHT SLIDE MENU */}
       <div
-        className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-(--primary) z-50 transform transition-transform duration-300 lg:hidden
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-[#3E2723] z-50 transform transition-transform duration-300 lg:hidden
           ${open ? "translate-x-0" : "translate-x-full"}
         `}
       >
@@ -80,7 +76,7 @@ const Navbar = () => {
           <button
             onClick={() => setOpen(false)}
             aria-label="Close Menu"
-            className="text-2xl text-white hover:text-(--accent)"
+            className="text-2xl text-white hover:text-[#C9A24D] "
           >
             <HiOutlineX />
           </button>
