@@ -6,7 +6,11 @@ import { LuWallet } from "react-icons/lu";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import FeaturedCategories from "./FeaturedCategories";
-import {Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
+import TrendingNow from "./TrendingNow";
+import Testimonial from "./Testimonial";
+import Form from "./Form";
+import Inspiration from "./Inspiration";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,21 +41,21 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-(--background) hero-pattern">
-        <div className="grid lg:grid-cols-2 sm:px-10 pt-28 pb-15 px-2">
+      <div className="bg-[#FAF7F2] hero-pattern">
+        <div className="grid lg:grid-cols-2 sm:px-20 pt-28 pb-15 px-8">
           {/* LEFT SIDE */}
           <div className="mb-5">
             <div className="flex">
-              <div className="border border-(--accent) rounded-2xl px-4 py-2 bg-white flex items-center gap-2">
-                <FaMicrophone className="text-(--accent)" />
+              <div className="border border-[#C9A24D] rounded-2xl px-4 py-2 bg-white flex items-center gap-2">
+                <FaMicrophone className="text-[#C9A24D]" />
                 <span className="text-sm">The Best online Furniture Store</span>
               </div>
             </div>
 
             <div className="mt-5 mb-5">
-              <h1 className="text-5xl sm:text-6xl lg:text-6xl font-serif font-black leading-[1.1] text-(--primary) mb-5 font-bolder">
+              <h1 className="text-5xl sm:text-6xl lg:text-6xl font-serif font-black leading-[1.1] text-[#3E2723] mb-5 font-bolder">
                 Explore Our <br />{" "}
-                <span className="text-(--accent) italic">Modern</span> <br />{" "}
+                <span className="text-[#C9A24D] italic">Modern</span> <br />{" "}
                 Furniture <br /> Collection
               </h1>
               <p className="text-black/40 leading-relaxed sm:text-lg text-sm sm:pr-40">
@@ -63,14 +67,14 @@ const Home = () => {
             {/* BUTTONS OF LEFT SIDE */}
             <div className="flex gap-4 homeBtn mb-20">
               <Link to="/shop">
-                <button className="bg-(--primary) px-10 py-3 text-white rounded-full flex items-center gap-2 shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_var(--accent)] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_var(--accent)] transition group cursor-pointer place-content-center">
+                <button className="bg-[#3E2723] px-10 py-3 text-white rounded-full flex items-center gap-2 shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_#3E2723] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_#3E2723] transition group cursor-pointer place-content-center">
                   Shop Now
                   <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
                 </button>
               </Link>
 
               <Link to="/categories">
-                <button className="px-10 py-3 border border-(--primary) text-(--primary) rounded-full cursor-pointer shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_var(--background)] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_var(--background)] transition duration-300 hover:bg-(--primary) hover:text-white">
+                <button className="px-10 py-3 border border-[#3E2723] text-[#3E2723] rounded-full cursor-pointer shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_#FAF7F2] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_#FAF7F2] transition duration-300 hover:bg-[#3E2723] hover:text-white">
                   View All Products
                 </button>
               </Link>
@@ -101,7 +105,7 @@ const Home = () => {
                 />
               </div>
               <div className="pl-3">
-                <div className="flex items-center text-(--accent)">
+                <div className="flex items-center text-[#C9A24D]">
                   <FaRegStar />
                   <p className="font-medium ml-2">4.9 Ratings+</p>
                 </div>
@@ -126,8 +130,8 @@ const Home = () => {
               {/* <button
                 onClick={handlePrev}
                 className="absolute -left-5 top-1/2 -translate-y-1/2 
-                bg-(--primary) text-(--accent) p-2 rounded-full
-                hover:bg-(--accent) hover:text-(--primary) transition-all cursor-pointer duration-300"
+                bg-[#3E2723] text-[#C9A24D] p-2 rounded-full
+                hover:bg-(--accent) hover:text-[#3E2723] transition-all cursor-pointer duration-300"
               >
                 <MdKeyboardArrowLeft className="text-3xl" />
               </button> */}
@@ -136,8 +140,8 @@ const Home = () => {
               {/* <button
                 onClick={handleNext}
                 className="absolute -right-5 top-1/2 -translate-y-1/2 
-                bg-(--primary) text-(--accent) p-2 rounded-full
-                hover:bg-(--accent) hover:text-(--primary) transition-all cursor-pointer duration-300"
+                bg-[#3E2723] text-[#C9A24D] p-2 rounded-full
+                hover:bg-(--accent) hover:text-[#3E2723] transition-all cursor-pointer duration-300"
               >
                 <MdKeyboardArrowRight className="text-3xl" />
               </button> */}
@@ -145,44 +149,44 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-(--secondary) border-y border-(--accent)/30 px-3 sm:px-9 py-5">
+        <div className="bg-[#E6D5C3] border-y border-[#C9A24D]/30 px-8 sm:px-20 py-5">
           <div className="grid grid-cols-4 gap-2 optionsHome">
             <div className="flex items-center gap-2">
-              <div className="p-4 border rounded-full border-(--accent) bg-white">
+              <div className="p-4 border rounded-full border-[#C9A24D] bg-white">
                 <FiTruck />
               </div>
               <div>
-                <h4 className="font-serif text-(--primary) font-bold">Free Shippings</h4>
+                <h4 className=" text-[#3E2723] font-bold">Free Shippings</h4>
                 <p className="text-black/50 text-xs">For orders above $180</p>
               </div>
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="p-4 border rounded-full border-(--accent) bg-white">
+              <div className="p-4 border rounded-full border-[#C9A24D] bg-white">
                 <LuWallet />
               </div>
               <div>
-                <h4 className="font-serif text-(--primary) font-bold">Flexible Payment</h4>
+                <h4 className=" text-[#3E2723] font-bold">Flexible Payment</h4>
                 <p className="text-black/50 text-xs">Multiple secure options</p>
               </div>
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="p-4 border rounded-full border-(--accent) bg-white">
+              <div className="p-4 border rounded-full border-[#C9A24D] bg-white">
                 <RiCustomerService2Fill />
               </div>
               <div>
-                <h4 className="font-serif text-(--primary) font-bold">24x7 Supports</h4>
+                <h4 className="text-[#3E2723] font-bold">24x7 Supports</h4>
                 <p className="text-black/50 text-xs">We support online all days</p>
               </div>
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="p-4 border rounded-full border-(--accent) bg-white">
+              <div className="p-4 border rounded-full border-[#C9A24D] bg-white">
                 <MdOutlineVerifiedUser />
               </div>
               <div>
-                <h4 className="font-serif text-(--primary) font-bold">Secure Payment</h4>
+                <h4 className=" text-[#3E2723] font-bold">Secure Payment</h4>
                 <p className="text-black/50 text-xs">100% Secure Payment</p>
               </div>
             </div>
@@ -191,13 +195,28 @@ const Home = () => {
       </div>
 
       {/* FEATURED CATEGORIES */}
-      <div className="bg-(--background) sm:px-10 py-15 px-2">
+      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-8">
         <FeaturedCategories />
       </div>
       
       {/* TRENDING NOW */}
-      <div className="sm:px-10 py-15 px-2">
+      <div className="sm:px-20 py-15 px-8">
+        <TrendingNow />
+      </div>
 
+      {/* CUSTOMIZATION FORM */}
+      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-8">
+        <Form />
+      </div>
+
+      {/* INSPIRATION */}
+      <div className="sm:px-20 py-15 px-8">
+        <Inspiration />
+      </div>
+
+      {/* TESTIMONIALS */}
+      <div className="sm:px-20 py-15 px-8 bg-[#E6D5C3]/20">
+        <Testimonial />
       </div>
     </>
   );

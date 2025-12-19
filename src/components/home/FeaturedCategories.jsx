@@ -6,12 +6,12 @@ const FeaturedCategories = () => {
   return (
     <div>
       <div className="flex justify-between mb-8">
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-(--primary)">
+        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#3E2723]">
           Featured Categories
         </h2>
         <Link
           to="/categories"
-          className="text-sm font-bold text-(--accent) hover:text-(--primary) flex items-center gap-1 transition-colors"
+          className="text-sm font-bold text-[#C9A24D] hover:text-[#3E2723] flex items-center gap-1 transition-colors"
         >
           View All
           <FaArrowRight />
@@ -19,29 +19,29 @@ const FeaturedCategories = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        <div className="md:col-span-5 bg-white rounded-3xl p-8 relative overflow-hidden group shadow-soft hover:shadow-xl transition-shadow border border-(--accent)/50">
+        <div className="md:col-span-5 bg-white rounded-3xl p-8 relative overflow-hidden group shadow-soft hover:shadow-xl transition-shadow border border-[#C9A24D]/50">
           {/* LEDT CARD */}
           <div className="relative z-10 mb-32 md:mb-0">
-            <span className="bg-(--secondary) text-(--primary) text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
+            <span className="bg-[#E6D5C3] text-[#3E2723] text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
               1500+ Items
             </span>
-            <h3 className="text-3xl font-serif font-bold text-(--primary) mb-2">
+            <h3 className="text-3xl font-serif font-bold text-[#3E2723] mb-2">
               Chairs
             </h3>
-            <p className="text-sm text-(--text)/60 mb-6 max-w-50">
+            <p className="text-sm text-[#2B2B2B]/60 mb-6 max-w-50">
               Comfort meets style in our premium seating collection.
             </p>
-            <ul className="text-sm text-(--text)/80 space-y-1">
-              <li className="hover:text-(--accent) cursor-pointer transition-colors">
+            <ul className="text-sm text-[#2B2B2B]/80 space-y-1">
+              <li className="hover:text-[#C9A24D] cursor-pointer transition-colors">
                 Gaming Chair
               </li>
-              <li className="hover:text-(--accent) cursor-pointer transition-colors">
+              <li className="hover:text-[#C9A24D] cursor-pointer transition-colors">
                 Lounge Chair
               </li>
-              <li className="hover:text-(--accent) cursor-pointer transition-colors">
+              <li className="hover:text-[#C9A24D] cursor-pointer transition-colors">
                 Dining Chair
               </li>
-              <li className="hover:text-(--accent) cursor-pointer font-bold text-(--accent) mt-2 flex items-center gap-1 group transition">
+              <li className="hover:text-[#C9A24D] cursor-pointer font-bold text-[#C9A24D] mt-2 flex items-center gap-1 group transition">
                 Explore More
                 <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
               </li>
@@ -58,18 +58,18 @@ const FeaturedCategories = () => {
 
         {/* RIGHT CARD */}
         <div className="md:col-span-7 flex flex-col gap-6">
-          <div className="bg-white rounded-3xl p-8 relative overflow-hidden h-75 group shadow-soft hover:shadow-xl transition-shadow flex items-center border border-(--accent)/50">
+          <div className="bg-white rounded-3xl p-8 relative overflow-hidden h-75 group shadow-soft hover:shadow-xl transition-shadow flex items-center border border-[#C9A24D]/50">
             <div className="w-1/2 relative z-10">
-              <span className="bg-(--secondary) text-(--primary) text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
+              <span className="bg-[#E6D5C3] text-[#3E2723] text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
                 750+ Items
               </span>
-              <h3 className="text-3xl font-serif font-bold text-(--primary) mb-2">
+              <h3 className="text-3xl font-serif font-bold text-[#3E2723] mb-2">
                 Sofa
               </h3>
-              <p className="text-sm text-(--text)/60 mb-4">
+              <p className="text-sm text-[#2B2B2B]/60 mb-4">
                 Reception Sofa, Sectional Sofa, Armless Sofa
               </p>
-              <button className="text-sm font-bold text-(--accent) flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+              <button className="text-sm font-bold text-[#C9A24D] flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
                 Browse Collection
                 <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
               </button>
@@ -83,23 +83,23 @@ const FeaturedCategories = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 relative overflow-hidden h-62.5 group shadow-soft hover:shadow-xl transition-shadow flex items-center border border-(--accent)/50">
+          <div className="bg-white rounded-3xl p-8 relative overflow-hidden h-62.5 group shadow-soft hover:shadow-xl transition-shadow flex items-center border border-[#C9A24D]/50">
             <div className="w-1/2 relative z-10">
-              <span className="bg-(--secondary) text-(--primary) text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
+              <span className="bg-[#E6D5C3] text-[#3E2723] text-xs font-bold px-2 py-1 rounded mb-2 inline-block">
                 450+ Items
               </span>
-              <h3 className="text-3xl font-serif font-bold text-(--primary) mb-2">
-                Lighting
+              <h3 className="text-3xl font-serif font-bold text-[#3E2723] mb-2">
+                Bed
               </h3>
-              <p className="text-sm text-(--text)/60 mb-4">
-                Table Lights, Ceiling Lights, Wall Lights
+              <p className="text-sm text-[#2B2B2B]/60 mb-4">
+                Modern Bedroom with Blue Accent Wall
               </p>
             </div>
             <div className="absolute right-0 top-0 h-full w-1/2">
               <img
                 alt="Lighting"
                 className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7qPZY0XdwDNCv8JqGtZ8cxuZpJKsKTpKrsEvjmwOaEPne36_ghV6cILTNDSTi9W0D11vTmfdGSuE_oY4yQieYQBWa8uIDnUeGypjmxAT44tvwFuvFvCN3GNqsdEnvHVKQ8SzxaHQuD18ezWrW6onK5o0vKduYdFwlVsTiuCAnJDwcIKnAND-vgrF83--NIvJngpcM9d_NWj0Aty6ZmOU4HjdZZKrtwAWdpHZh-NmXRdPSvKClKOCbWWT_q5mNFbvB4M5J4a1Gn8c4"
+                src="https://img.freepik.com/free-photo/modern-bedroom-interior-design-with-blue-accent-wall_23-2151995362.jpg"
               />
             </div>
           </div>

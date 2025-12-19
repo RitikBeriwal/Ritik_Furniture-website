@@ -389,7 +389,7 @@ const Categories = () => {
                         setActiveCategory(tempCategory);
                         setShowFilter(false);
                     }}
-                    className="flex-1 py-2 rounded-lg bg-[#3E2723] text-[#FAF7F2] text-sm cursor-pointer hover:bg-[#3E2723]/90"
+                    className="flex-1 py-2 rounded-lg bg-[#3E2723] text-[#FAF7F2] text-sm cursor-pointer hover:bg-[#A6853D]/90"
                 >
                     Apply Filters
                 </button>
@@ -400,7 +400,7 @@ const Categories = () => {
                         setActiveCategory("All");
                         setShowFilter(false);
                     }}
-                    className="flex-1 py-2 rounded-lg border border-[#3E2723] text-[#3E2723] text-sm cursor-pointer hover:bg-[#3E2723]/10"
+                    className="flex-1 py-2 rounded-lg border border-[#3E2723] text-[#3E2723] text-sm cursor-pointer hover:bg-[#A6853D] hover:text-[#FAF7F2]"
                 >
                     Clear
                 </button>
@@ -534,7 +534,7 @@ const Categories = () => {
                                                     <span
                                                         className="absolute right-4 bottom-4 inline-flex items-center gap-2
             px-4 py-2 rounded-full bg-[#3E2723] text-[#FAF7F2] text-xs
-            transition-all duration-300 group-hover:bg-[#2d1c18]"
+            transition-all duration-300 group-hover:bg-[#A6853D]"
                                                     >
                                                         See more →
                                                     </span>
