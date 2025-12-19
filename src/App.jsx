@@ -1,35 +1,43 @@
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./pages/Navbar";
+import Footer from "./pages/Footer";
+import Home from "./components/home/Home";
 import Categories from "./components/Categories";
 import CategoryProducts from "./components/CategoryProducts";
 import CatelogPage from "./components/Catelog";
 import ProductDetail from "./components/ProductDetail";
-import Navbar from "./pages/Navbar";
-import Footer from "./pages/Footer";
-import Home from "./components/home/Home";
-import Aboutus from "./components/about/AboutHero";
+import Contact from "./pages/contact/Contact";
+import ScrollTop from "./components/ScrollTop";
+import AboutHero from "./components/about/AboutHero";
 import "./App.css";
 
 function App() {
   return (
     <>
+      <ScrollTop />
       <Navbar />
 
       <Routes>
-        {/* Home page */}
+        {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Catalog and categories pages */}
+        {/* Catalog & Categories */}
         <Route path="/catalogue" element={<CatelogPage />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/category/:type" element={<CategoryProducts />} />
 
-        {/* Product detail page */}
+        {/* Product Detail */}
         <Route path="/productdetails" element={<ProductDetail />} />
 
-        {/* About page */}
-        <Route path="/aboutus" element={<Aboutus />} />
 
-        {/* 404 fallback */}
+        {/* About page */}
+        <Route path="/aboutus" element={<AboutHero />} />
+
+
+        {/* Contact */}
+        <Route path="/contact" element={<Contact />} />
+
+        {/* 404 */}
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
 
