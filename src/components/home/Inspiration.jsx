@@ -14,11 +14,10 @@ const Inspiration = () => {
               Inspiration
             </span>
             <h2 className="text-3xl font-serif font-bold mb-4 text-[#3E2723] mt-2">
-              Interior Design Templates
+              Featured Furniture Templates
             </h2>
             <p className="text-[#2B2B2B]/70">
-              Browse our pre-configured room setups designed by top interior
-              experts.
+             Explore featured furniture templates with pre-selected furniture sets, delivered straight to your home.
             </p>
           </div>
           <Link to="/categories" className="hidden md:flex items-center gap-2 font-bold text-[#C9A24D] hover:text-[#3E2723] transition-colors">
@@ -34,7 +33,7 @@ const Inspiration = () => {
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 data-alt="Scandinavian living room template light grey"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA51N9ZBg6rJ9wFO6f9jeGSxS8qgax3CxQq_vyBQpZsXOoR31loiuAHBSPi0hDHcNg-VRHZnB7JdFlZV3IunTCvOc6Qoys7C0UPJXW2PBKdMaOtoj3FPJ4tjtFzLvCGkOhn6aRT-qzbJuEC7cQwf5OsvB-IuRHH2oovommdtx_nQm0vDy9HgoHxlapyr31cTEi0DquEATLwyIqfq1i_k4lt84W4fW-r_4Vt8vLU7qu7uEwEYD3uXJpQQ5hdSuffhK-ilB60GVUZQEBg"
+                src="https://img.freepik.com/premium-photo/bed-with-white-headboard-brown-gray-comforter_520665-30664.jpg"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
               <button className="absolute top-4 right-4 bg-white size-10 rounded-full flex items-center justify-center shadow-md hover:bg-[#C9A24D] hover:text-white transition-colors text-[#3E2723]">
@@ -45,10 +44,10 @@ const Inspiration = () => {
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-2xl font-serif font-bold text-[#3E2723] group-hover:text-[#C9A24D] transition-colors">
-                  Nordic Serenity
+                  Bed
                 </h3>
                 <p className="text-sm text-[#2B2B2B]/60 mt-1">
-                  Includes: Sofa, Coffee Table, Rug, Floor Lamp
+                  A bed with a white headboard and a brown and gray comforter
                 </p>
               </div>
               <div className="text-lg font-bold text-[#C9A24D]">₹5,400</div>
@@ -60,7 +59,7 @@ const Inspiration = () => {
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 data-alt="Modern dark industrial living room"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB65deF0NWq-SekokENWURad98cOsyhO3uLspOOkgyflHxnwQU9XgSi1MZve_6td9fVm7m1esIbwD_az97LlLZIdisR01ywM79JulK0UJbPTDKPq63MDGRdj4GPoviKdvR36eyJ-OAAL_cB9jOr_-BM1spCqq0SjrZEX5NS60C6_KkTgKGqJ75lv-JO90lSWhqet0RPNcluyNDrWtS6SfsAdR0tRsZpc8rKOddevJuedrMAgxNBQ5ICvh1TIIikmOPD_1uMbAmlROPO"
+                src="https://img.freepik.com/free-photo/modern-fashionable-red-leather-couch-with-cushions-cropped-christmas-tree-brick-wall-loft-design_132075-11381.jpg"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
               <button className="absolute top-4 right-4 bg-white size-10 rounded-full flex items-center justify-center shadow-md hover:bg-[#C9A24D] hover:text-white transition-colors text-[#3E2723]">
@@ -70,10 +69,10 @@ const Inspiration = () => {
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-2xl font-serif font-bold text-[#3E2723] group-hover:text-[#C9A24D] transition-colors">
-                  Urban Loft
+                  Modern Sofa
                 </h3>
                 <p className="text-sm text-[#2B2B2B]/60 mt-1">
-                  Includes: Leather Sofa, Metal Shelving, Accent Chair
+                 Modern fashionable red leather couch with cushions
                 </p>
               </div>
               <div className="text-lg font-bold text-[#C9A24D]">₹6,100</div>
