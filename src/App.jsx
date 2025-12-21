@@ -13,6 +13,7 @@ import AboutHero from "./components/about/AboutHero";
 import ScrollTop from "./components/ScrollTop";
 
 import "./App.css";
+import Template from "./components/home/Template";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
         {/* Product Detail (WITH PARAM) */}
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/template" element={<Template />} />
 
         {/* About */}
         <Route path="/aboutus" element={<AboutHero />} />
