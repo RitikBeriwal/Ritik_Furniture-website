@@ -7,6 +7,7 @@ import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Home from "./components/home/Home";
 import "./App.css";
+import Template from "./components/home/Template";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
         {/* Product detail page */}
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/template" element={<Template />} />
 
         {/* 404 fallback */}
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
