@@ -9,9 +9,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
+<<<<<<< HEAD
     `block px-4 py-3 font-medium transition ${isActive
       ? "text-[#C9A24D]"
       : "hover:text-[#C9A24D]"
+=======
+    `block px-4 py-3 font-medium transition ${
+      isActive ? "text-[#C9A24D]" : "hover:text-[#C9A24D]"
+>>>>>>> origin/Home-Page
     }`;
 
   return (
@@ -34,10 +39,17 @@ const Navbar = () => {
           </ul>
 
           {/* ICONS */}
+<<<<<<< HEAD
           <div className="flex items-center gap-4">
             <FaRegHeart className="hidden sm:block text-[20px] cursor-pointer hover:text-[#C9A24D]" />
             <FaRegUser className="hidden sm:block text-[20px] cursor-pointer hover:text-[#C9A24D]" />
             <FaShoppingCart className="text-[20px] cursor-pointer hover:text-[#C9A24D]" />
+=======
+          <div className="flex items-center gap-4 ml-8 sm:ml-0">
+            <FaRegHeart className="text-[20px] cursor-pointer hover:text-[#C9A24D]  hidden sm:block" />
+            <FaRegUser className="text-[20px] cursor-pointer hover:text-[#C9A24D]" />
+            <FaShoppingCart className="text-[20px] cursor-pointer hover:text-[#C9A24D] " />
+>>>>>>> origin/Home-Page
 
             {/* MENU BUTTON */}
             <button
