@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaRegHeart, FaRegUser, FaShoppingCart } from "react-icons/fa";
 import { HiOutlineX } from "react-icons/hi";
 import { IoMenu } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assests/images/logo White.png";
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <FaRegHeart className="hidden sm:block text-[20px] cursor-pointer hover:text-[#C9A24D]" />
-            <FaRegUser className="hidden sm:block text-[20px] cursor-pointer hover:text-[#C9A24D]" />
+            <Link to="/auth"> <FaRegUser className="text-[20px] cursor-pointer hover:text-[#C9A24D]" /></Link>
             <FaShoppingCart className="text-[20px] cursor-pointer hover:text-[#C9A24D]" />
 
             {/* MENU BUTTON */}

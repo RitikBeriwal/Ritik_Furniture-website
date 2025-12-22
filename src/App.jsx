@@ -11,6 +11,7 @@ import AboutHero from "./components/about/AboutHero";
 import ScrollTop from "./components/ScrollTop";
 import "./App.css";
 import Template from "./components/home/Template";
+import AuthFlip from "./components/AuthFlip";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
         {/* Contact */}
         <Route path="/contact" element={<Contact />} />
 
+        {/* Auth */}
+        <Route path="/auth" element={<AuthFlip />} />
+
         {/* 404 */}
         <Route
           path="*"
@@ -54,3 +58,4 @@ function App() {
 }
 
 export default App;
+
