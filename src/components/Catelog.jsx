@@ -219,7 +219,31 @@ const CatalogPage = () => {
   return (
     <div className="min-h-screen bg-[#faf7f2] text-[#2b2b2b]">
       {/* ---------------- HERO ---------------- */}
-      <section className="md:m-8 relative h-[420px] rounded-3xl overflow-hidden"> <img src={bannerimg} alt="Catalog Banner" className="absolute inset-0 w-full h-full object-cover" /> <div className="absolute inset-0 bg-[#000]/55" /> <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4" > <p className="tracking-widest text-[#C9A24D] text-sm"> Redefine Your Space </p> <h1 className="text-white text-4xl md:text-5xl font-serif font-bold mt-2"> Elevate Your Living Experience </h1> <p className="text-gray-300 max-w-xl mt-4"> Curated furniture designed for comfort, quality, and timeless appeal. </p> </motion.div> </section>
+      <section className="md:m-8 relative h-[420px] rounded-3xl overflow-hidden m-6">
+        <img
+          src={bannerimg}
+          alt="Catalog Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#000]/55" />
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4"
+        >
+          <p className="tracking-widest text-[#C9A24D] text-sm">
+            Redefine Your Space
+          </p>
+          <h1 className="text-white text-4xl md:text-5xl font-serif font-bold mt-2">
+            Elevate Your Living Experience
+          </h1>
+          <p className="text-gray-300 max-w-xl mt-4">
+            Curated furniture designed for comfort, quality, and timeless appeal.
+          </p>
+        </motion.div>
+      </section>
 
       {/* ---------------- CONTENT ---------------- */}
       <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">

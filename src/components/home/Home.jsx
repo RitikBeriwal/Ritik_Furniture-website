@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-[#FAF7F2] hero-pattern">
-        <div className="grid lg:grid-cols-2 sm:px-20 pt-28 pb-15 px-8">
+        <div className="grid lg:grid-cols-2 sm:px-20 pt-28 pb-15 px-3">
           {/* LEFT SIDE */}
           <div className="mb-5">
             <div className="flex">
@@ -67,21 +67,21 @@ const Home = () => {
             {/* BUTTONS OF LEFT SIDE */}
             <div className="flex gap-4 homeBtn mb-20">
               <Link to="/shop">
-                <button className="bg-[#3E2723] px-10 py-3 text-white rounded-full flex items-center gap-2 shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_#3E2723] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_#3E2723] transition group cursor-pointer place-content-center">
+                <button className="bg-[#C9A24D] px-10 py-3 text-white rounded-full flex items-center gap-2 shadow-[0_8px_20px_rgba(0,0,0,0.25),0_4px_12px_#C9A24D] hover:shadow-[0_12px_20px_rgba(0,0,0,0.35),0_6px_18px_#C9A24D] transition  group cursor-pointer place-content-center duration-300">
                   Shop Now
                   <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
                 </button>
               </Link>
 
               <Link to="/categories">
-                <button className="px-10 py-3 border border-[#3E2723] text-[#3E2723] rounded-full cursor-pointer shadow-[0_8px_20px_rgba(0,0,0,0.35),0_4px_12px_#FAF7F2] hover:shadow-[0_12px_20px_rgba(0,0,0,0.45),0_6px_18px_#FAF7F2] transition duration-300 hover:bg-[#3E2723] hover:text-white">
+                <button className="px-10 py-3 border border-[#C9A24D] text-[#3E2723] rounded-full cursor-pointer shadow-[0_8px_20px_rgba(0,0,0,0.25),0_4px_12px_#C9A24D] hover:shadow-[0_12px_20px_rgba(0,0,0,0.35),0_6px_18px_#C9A24D] transition duration-300 hover:bg-[#C9A24D] hover:text-white">
                   View All Products
                 </button>
               </Link>
             </div>
 
             {/* RATING */}
-            <div className="flex items-center sm:flex-row flex-col">
+            <div className="flex sm:items-center sm:flex-row flex-col">
               <div className="flex -space-x-3 pr-1">
                 <img
                   src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
@@ -149,7 +149,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-[#E6D5C3] border-y border-[#C9A24D]/30 px-8 sm:px-20 py-5">
+        <div className="bg-[#E6D5C3] border-y border-[#C9A24D]/30 px-3 sm:px-20 py-5">
           <div className="grid grid-cols-4 gap-2 optionsHome">
             <div className="flex items-center gap-2">
               <div className="p-4 border rounded-full border-[#C9A24D] bg-white">
@@ -157,7 +157,7 @@ const Home = () => {
               </div>
               <div>
                 <h4 className=" text-[#3E2723] font-bold">Free Shippings</h4>
-                <p className="text-black/50 text-xs">For orders above $180</p>
+                <p className="text-black/50 text-xs">For orders above ₹180</p>
               </div>
             </div>
 
@@ -195,27 +195,27 @@ const Home = () => {
       </div>
 
       {/* FEATURED CATEGORIES */}
-      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-8">
+      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-3">
         <FeaturedCategories />
       </div>
       
       {/* TRENDING NOW */}
-      <div className="sm:px-20 py-15 px-8">
+      <div className="sm:px-20 py-15 px-3">
         <TrendingNow />
       </div>
 
       {/* CUSTOMIZATION FORM */}
-      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-8">
+      <div className="bg-[#FAF7F2] sm:px-20 py-15 px-3">
         <Form />
       </div>
 
       {/* INSPIRATION */}
-      <div className="sm:px-20 py-15 px-8">
+      <div className="sm:px-20 py-15 px-3">
         <Inspiration />
       </div>
 
       {/* TESTIMONIALS */}
-      <div className="sm:px-20 py-15 px-8 bg-[#E6D5C3]/20">
+      <div className="sm:px-20 py-15 px-3 bg-[#E6D5C3]/20">
         <Testimonial />
       </div>
     </>
