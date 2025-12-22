@@ -15,15 +15,15 @@ const Inspiration = () => {
             </span>
             <div>
               <h2 className="text-2xl sm:text-4xl font-serif font-bold mb-4 text-[#3E2723] mt-2">
-              Furniture Templates
-            </h2>
+                Furniture Templates
+              </h2>
             </div>
-            
+
             <p className="text-[#2B2B2B]/70 mb-2 sm:mb-0">
-             Explore featured furniture templates with pre-selected furniture sets.
+              Explore featured furniture templates with pre-selected furniture sets.
             </p>
           </div>
-          <Link to="/categories" className="text-sm flex items-center gap-2 font-bold text-[#C9A24D] hover:text-[#3E2723] transition-colors">
+          <Link to="/template" className="text-sm flex items-center gap-2 font-bold text-[#C9A24D] hover:text-[#3E2723] transition-colors">
             See all Templates
             <FaArrowRightLong />
           </Link>
@@ -75,7 +75,7 @@ const Inspiration = () => {
                   Modern Sofa
                 </h3>
                 <p className="text-sm text-[#2B2B2B]/60 mt-1">
-                 Modern fashionable red leather couch with cushions
+                  Modern fashionable red leather couch with cushions
                 </p>
               </div>
               <div className="text-lg font-bold text-[#C9A24D]">₹6,100</div>

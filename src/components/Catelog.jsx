@@ -103,7 +103,7 @@ const CatalogPage = () => {
   return (
     <div className="min-h-screen bg-[#faf7f2] text-[#2b2b2b] ">
       {/* ---------------- HERO ---------------- */}
-      <section className="md:m-8 relative h-[420px] rounded-3xl overflow-hidden">
+      <section className="md:m-8 relative h-[420px] rounded-3xl overflow-hidden m-6">
         <img
           src={bannerimg}
           alt="Catalog Banner"

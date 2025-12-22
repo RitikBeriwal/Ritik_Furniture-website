@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import { products, productActions } from "../../assests/assests";
+import { Link } from "react-router-dom";
 
 const TrendingNow = () => {
   const sliderRef = useRef(null);
@@ -172,6 +173,14 @@ const TrendingNow = () => {
                     ₹{selectedProduct.oldPrice}
                   </span>
                 )}
+              </div>
+              <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <Link to={`/product/${selectedProduct.id}`} className="inline-block px-6 py-3 bg-[#3E2723] text-white font-semibold rounded-full hover:bg-[#C9A24D] transition">
+                  Add to Cart
+                </Link>
+                <Link to={`/product/${selectedProduct.id}`} className="inline-block px-6 py-3 bg-[#3E2723] text-white font-semibold rounded-full hover:bg-[#C9A24D] transition">
+                  Buy Now
+                </Link>
               </div>
             </div>
           </div>
