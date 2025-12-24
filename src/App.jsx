@@ -12,6 +12,7 @@ import ScrollTop from "./components/ScrollTop";
 import "./App.css";
 import Template from "./components/home/Template";
 import AuthFlip from "./components/AuthFlip";
+import Customize from "./components/Customize";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/catalogue" element={<CatalogPage />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/category/:typeKey" element={<CategoryProducts />} />
+        <Route path="/customize" element={<Customize />} />
 
         {/* Product Detail (WITH PARAM) */}
         <Route path="/product/:id" element={<ProductDetail />} />
