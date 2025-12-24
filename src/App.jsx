@@ -12,7 +12,8 @@ import ScrollTop from "./components/ScrollTop";
 import "./App.css";
 import Template from "./components/home/Template";
 import AuthFlip from "./components/AuthFlip";
-import Customize from "./components/Customize";
+import Customize from "./components/customization/Customize";
+
 
 function App() {
   return (
